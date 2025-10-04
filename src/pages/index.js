@@ -20,10 +20,16 @@ export default function Home() {
                 </p>
                 <Link
                     href="/homePage" 
-                    className="bg-white text-pink-500 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+                    className="bg-white text-pink-500 font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
                 >
                     Enter
                 </Link>
+                <Image 
+                    src="/qr.png" 
+                    width={250} 
+                    height={100} 
+                    className="mt-10 rounded-2xl" 
+                />
             </div>
         </div>  
     )

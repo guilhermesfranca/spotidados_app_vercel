@@ -80,7 +80,7 @@ export default function MainPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
-        <p className="text-gray-400">Carregando top artists...</p>
+        <p className="text-gray-400">Loading: top artists...</p>
       </div>
     );
   }
@@ -88,7 +88,7 @@ export default function MainPage() {
   if (error) {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
-        <p className="text-red-400">Erro: {error}</p>
+        <p className="text-red-400">Error: {error}</p>
       </div>
     );
   }

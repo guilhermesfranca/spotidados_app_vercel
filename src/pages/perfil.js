@@ -1,6 +1,7 @@
 import SearchBar from "@/components/SearchBar";
 import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 const TEAM = [
   {
@@ -108,6 +109,21 @@ export default function Perfil() {
               </div>
             </article>
           ))}
+
+          {/* Card para o repositório */}
+          <article className="col-span-2 bg-[#121212]/80 rounded-xl p-4 shadow-md flex flex-col items-center text-center">
+            <h3 className="text-white font-semibold mb-2">
+              Project repository
+            </h3>
+            <Link
+              href="https://github.com/MickSabogal/spotidados"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4  py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg hover:bg-white/20 transition text-white font-medium"
+            >
+              View on GitHub
+            </Link>
+          </article>
         </section>
       </div>
     </div>
